@@ -1,0 +1,621 @@
+{
+  "info": {
+    "_postman_id": "afe02121-2ba7-4404-b803-61a590dff5c9",
+    "name": "saraha_app_12",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "43093003"
+  },
+  "item": [
+    {
+      "name": "user",
+      "item": [
+        {
+          "name": "get profile",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWMyNzM5MjdkY2U1NTZmYzcxMDg1NzMiLCJyb2xlIjowLCJqdGkiOiIxNWUxOTVkMDVjMDY4NDI1ZTBjYSIsImlhdCI6MTc3NDM1MTcyMCwiZXhwIjoxNzc0MzYzNzIwfQ.gXVb_5Piaouvr7HtG5fnsZR354AGV-ggYZlVjrs5h_c",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "localhost:3000/user",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "user"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "upload profile picture",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWI1NjBhNWI1YWEzMGUyZDc4NTg1YTAiLCJyb2xlIjowLCJpYXQiOjE3NzM0OTQ0NDQsImV4cCI6MTc3MzUwNjQ0NH0.11bGP_MpAdw3kaWdssRMuYNH4bhf22AcCHp1D4NK_ys",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "pp",
+                  "type": "file",
+                  "uuid": "3450d770-7695-4d03-aa1b-553cd18e5346",
+                  "src": "/Users/nagy_00/Desktop/IMG_8240.jpg"
+                }
+              ]
+            },
+            "url": {
+              "raw": "localhost:3000/user/upload-profile-picture",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "user",
+                "upload-profile-picture"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "upload cover pic",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWI5NmVkNWNmYjFhZTIxNDY5MzcyYmEiLCJyb2xlIjowLCJqdGkiOiJhNDk4ZGM3MTFkM2MzZTFkZDQ4YSIsImlhdCI6MTc3MzgzMDk4NCwiZXhwIjoxNzczODQyOTg0fQ.pX9bB-lCwoWQ5xmDiYYocQPOqtt1OqoNhEUhZ3_wdAM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "cover",
+                  "type": "file",
+                  "uuid": "7fb927f8-0c52-4350-a229-fc57b48d6fd8",
+                  "src": [
+                    "/Users/nagy_00/Desktop/IMG_8240.jpg",
+                    "/Users/nagy_00/Desktop/IMG_5649.jpeg"
+                  ]
+                }
+              ]
+            },
+            "url": {
+              "raw": "localhost:3000/user/upload-cover-picture",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "user",
+                "upload-cover-picture"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "auth",
+      "item": [
+        {
+          "name": "signup",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "userName",
+                  "value": "nagy",
+                  "type": "text"
+                },
+                {
+                  "key": "email",
+                  "value": "nagytab123@gmail.com",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "ka3bora@123AA",
+                  "type": "text"
+                },
+                {
+                  "key": "repassword",
+                  "value": "ka3bora@123AA",
+                  "type": "text"
+                },
+                {
+                  "key": "phoneNumber",
+                  "value": "01026077687",
+                  "type": "text"
+                },
+                {
+                  "key": "gender",
+                  "value": "0",
+                  "type": "text"
+                },
+                {
+                  "key": "role",
+                  "type": "text",
+                  "value": "0"
+                },
+                {
+                  "key": "image",
+                  "type": "file",
+                  "uuid": "ee3a4683-90a8-43c2-b098-05ce0f3718ef",
+                  "src": "/Users/nagy_00/Desktop/IMG_8240.jpg",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "localhost:3000/auth/signup",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "signup"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "login",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWFkOTFhMDVlYTY3YjEwYjAzNzg5MWUiLCJyb2xlIjowLCJpYXQiOjE3NzI5ODQwNjAsImV4cCI6MTc3Mjk4NDEyMH0.v-nFXo44xLQwM-zyl_-o1hmsxeaU3rzPC5soSXfBqbE",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\":\"nagytab123@gmail.com\",\n    \"password\":\"ka3bora@123AA\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/auth/login",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "refresh-token",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWMyNzM5MjdkY2U1NTZmYzcxMDg1NzMiLCJyb2xlIjowLCJqdGkiOiJkNjU1YzAwOTk1Yjg1YjA4YTBjZSIsImlhdCI6MTc3NDgxNDQwNCwiZXhwIjoxODA2MzcyMDA0fQ.R_NCJLPE60v64lBW7AwKu8dLkFwx2lfbOrXageQnSo4",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "localhost:3000/auth/refresh-token",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "refresh-token"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "verify-account",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWI1NjBhNWI1YWEzMGUyZDc4NTg1YTAiLCJyb2xlIjowLCJpYXQiOjE3NzM0OTQ0NDQsImV4cCI6MTc3MzUwNjQ0NH0.11bGP_MpAdw3kaWdssRMuYNH4bhf22AcCHp1D4NK_ys",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\":\"nagytab123@gmail.com\",\n    \"otp\":\"564524\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/auth/verify-account",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "verify-account"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "send-otp",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\":\"nagytab123@gmail.com\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/auth/send-otp",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "send-otp"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "logout-from-all-devices",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWI3ZjQxYTRlYjkzODZiMjAzY2I2MGYiLCJyb2xlIjowLCJpYXQiOjE3NzM2NjU4NjgsImV4cCI6MTc3MzY3Nzg2OH0.Kggpm6Aq3hIQgC1h3-eUauGvwEFWBE1LmW3EaKaHXL0",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\":\"nagytab123@gmail.com\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/auth/logout-from-all-devices",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "logout-from-all-devices"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "logout",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWI5NmVkNWNmYjFhZTIxNDY5MzcyYmEiLCJyb2xlIjowLCJqdGkiOiI4MDdmYmQzNmI2NDc1NTdlYTM1MyIsImlhdCI6MTc3Mzc2MDkwMSwiZXhwIjoxNzczNzcyOTAxfQ.HA_V07VDsqHQWR6Iluc75wk95ySer00-eM8Hd3TCiJM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\":\"nagytab123@gmail.com\",\n    \"password\":\"ka3bora@123AA\"\n}"
+            },
+            "url": {
+              "raw": "localhost:3000/auth/logout",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "logout"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "massege",
+      "item": [
+        {
+          "name": "send massege anonymous",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "content",
+                  "value": "massege",
+                  "type": "text"
+                },
+                {
+                  "key": "attatchments",
+                  "type": "file",
+                  "uuid": "997e5e21-c89e-43eb-8c2b-a92e2cf3848d",
+                  "src": [
+                    "/Users/nagy_00/Desktop/IMG_5649.jpeg",
+                    "/Users/nagy_00/Desktop/IMG_8240.jpg"
+                  ]
+                }
+              ]
+            },
+            "url": {
+              "raw": "localhost:3000/massege/69c273927dce556fc7108573/anonymous",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "massege",
+                "69c273927dce556fc7108573",
+                "anonymous"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "send massege public",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWMyNzM5MjdkY2U1NTZmYzcxMDg1NzMiLCJyb2xlIjowLCJqdGkiOiJkNzE5YWJkYzUwNTcxZjk1ZDkyMCIsImlhdCI6MTc3NDgwODAzOCwiZXhwIjoxNzc0ODIwMDM4fQ.R7HMirZypzZhNgA_pFQPuXYZlNF3fi5DF_hdzezWxeQ",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "content",
+                  "value": "massege",
+                  "type": "text",
+                  "uuid": "fe5251fa-f9fa-499b-8c44-345a9f142775"
+                },
+                {
+                  "key": "attatchments",
+                  "type": "file",
+                  "uuid": "c47ea3bd-72dc-4b61-b553-70b5018657b6",
+                  "src": [
+                    "/Users/nagy_00/Desktop/IMG_8240.jpg",
+                    "/Users/nagy_00/Desktop/IMG_5649.jpeg"
+                  ]
+                }
+              ]
+            },
+            "url": {
+              "raw": "localhost:3000/massege/69c273927dce556fc7108573/public",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "massege",
+                "69c273927dce556fc7108573",
+                "public"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get specific massege",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWMyNzM5MjdkY2U1NTZmYzcxMDg1NzMiLCJyb2xlIjowLCJqdGkiOiIyMWY1MDRlYmE4YjEyZTE3MDg0MiIsImlhdCI6MTc3NDg5NjA1MCwiZXhwIjoxODA2NDUzNjUwfQ.gkNBM1pp2w-ht_cYKxr8KCOoMPLVQvVOFLW7upyifng",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "content",
+                  "value": "",
+                  "type": "text",
+                  "uuid": "c9ef40d2-07e6-4a3d-9425-9f97f0985f81",
+                  "disabled": true
+                },
+                {
+                  "key": "attatchments",
+                  "type": "file",
+                  "uuid": "d068c6bd-305b-424d-bc04-987145482ac0",
+                  "src": [
+                    "/Users/nagy_00/Desktop/IMG_8240.jpg",
+                    "/Users/nagy_00/Desktop/IMG_5649.jpeg"
+                  ],
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "localhost:3000/massege/69c974b85a889ae20cf3eefd",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "massege",
+                "69c974b85a889ae20cf3eefd"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get all masseges",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWMyNzM5MjdkY2U1NTZmYzcxMDg1NzMiLCJyb2xlIjowLCJqdGkiOiI1MTQwZjU3MDNiZDI2ODU2ZTA4MCIsImlhdCI6MTc3NDg5NDU5OSwiZXhwIjoxNzc0OTA2NTk5fQ.Cbf-oYdmUlfqb-Zn_JAtKJtv75KnrMp69hwJEh8PuSk",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "content",
+                  "value": "",
+                  "type": "text",
+                  "uuid": "c9ef40d2-07e6-4a3d-9425-9f97f0985f81",
+                  "disabled": true
+                },
+                {
+                  "key": "attatchments",
+                  "type": "file",
+                  "uuid": "d068c6bd-305b-424d-bc04-987145482ac0",
+                  "src": [
+                    "/Users/nagy_00/Desktop/IMG_8240.jpg",
+                    "/Users/nagy_00/Desktop/IMG_5649.jpeg"
+                  ],
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "localhost:3000/massege",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "massege"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "rate limiting",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWMyNzM5MjdkY2U1NTZmYzcxMDg1NzMiLCJyb2xlIjowLCJqdGkiOiJlNDQ0YzhlNTk5OWRiNDBjYmRlOCIsImlhdCI6MTc3NDgxMTA2NiwiZXhwIjoxNzc0ODIzMDY2fQ.Lqt4X3AWyOrWFu-9KvW3-YYwtUlcShYGNN2og_cimuM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "content",
+                  "value": "",
+                  "type": "text",
+                  "uuid": "c9ef40d2-07e6-4a3d-9425-9f97f0985f81",
+                  "disabled": true
+                },
+                {
+                  "key": "attatchments",
+                  "type": "file",
+                  "uuid": "d068c6bd-305b-424d-bc04-987145482ac0",
+                  "src": [
+                    "/Users/nagy_00/Desktop/IMG_8240.jpg",
+                    "/Users/nagy_00/Desktop/IMG_5649.jpeg"
+                  ],
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "localhost:3000/",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                ""
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
